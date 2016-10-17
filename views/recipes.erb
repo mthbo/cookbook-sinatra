@@ -1,0 +1,15 @@
+<h1>Cookbook</h1>
+
+<div class="panel panel-default">
+  <% @recipes.each_with_index do |recipe, index| %>
+    <div class="panel-heading">
+      <% tested = recipe.tested? ? "tested" : "not tested" %>
+      <h3 class="panel-title"><%= "#{index + 1} | #{recipe.name}" =%></h3>
+    </div>
+    <div class="panel-body">
+      <p><strong><%= "#{tested}" =%></strong></p>
+      <p><%= "#{recipe.cooking_time} - #{recipe.difficulty} " =%></p>
+      <p><%= "#{recipe.description}" =%></p>
+    </div>
+  <% end %>
+</div>

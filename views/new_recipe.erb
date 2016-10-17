@@ -1,0 +1,23 @@
+<!-- {name: name, cooking_time: cooking_time, difficulty: difficulty, description: description } -->
+<h1>Create a new recipe</h1>
+<form id="newRecipe" action="/recipes" method="post">
+  <div class="form-group">
+    <label for="inputName">Recipe name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Name" name="new_recipe[name]">
+  </div>
+  <div class="form-group">
+    <label for="inputTime">Cooking time</label>
+    <input type="text" class="form-control" id="inputTime" placeholder="Cooking time" name="new_recipe[cooking_time]">
+  </div>
+  <div class="form-group">
+    <label for="inputDifficulty">Difficulty</label>
+    <input type="text" class="form-control" id="inputDifficulty" placeholder="Difficulty" name="new_recipe[difficulty]">
+  </div>
+  <div class="form-group">
+    <label for="inputDescription">Description</label>
+    <input type="text" class="form-control" id="inputDescription" placeholder="Description" name="new_recipe[description]">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
